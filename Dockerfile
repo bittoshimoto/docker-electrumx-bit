@@ -42,7 +42,7 @@ VOLUME ["/data"]
 ENV HOME /data
 ENV ALLOW_ROOT 1
 ENV COIN=Bit
-ENV DAEMON_URL=http://shibacoin:noicabihs@127.0.0.1:22555
+ENV DAEMON_URL=http://bit:yhjiwsrtg@127.0.0.1:20971
 ENV EVENT_LOOP_POLICY uvloop
 ENV DB_DIRECTORY /data
 ENV SERVICES=tcp://:50001,ssl://:50002,wss://:50004,rpc://0.0.0.0:8000
