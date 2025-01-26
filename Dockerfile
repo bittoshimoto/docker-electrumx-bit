@@ -41,7 +41,7 @@ VOLUME ["/data"]
 # Define environment variables
 ENV HOME /data
 ENV ALLOW_ROOT 1
-ENV COIN=Shibacoin
+ENV COIN=Bit
 ENV DAEMON_URL=http://shibacoin:noicabihs@127.0.0.1:22555
 ENV EVENT_LOOP_POLICY uvloop
 ENV DB_DIRECTORY /data
