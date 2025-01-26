@@ -8,12 +8,12 @@ RUN apt-get update && apt-get upgrade -y && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Download and verify Bit binaries
-RUN curl -Lk -o bit-v.1.2.7.tar.gz https://github.com/bittoshimoto/Bit/releases/download/v.1.2.7/bit-v.1.2.7.tar.gz && \
-    mkdir -p bit-v.1.2.7 && \
-    tar -xvf bit-v.1.2.7.tar.gz -C bit-v.1.2.7 && \
-    rm bit-v.1.2.7.tar.gz && \
-    install -m 0755 -o root -g root -t /usr/local/bin bit-v.1.2.7/* && \
-    rm -rf bit-v.1.2.7
+RUN curl -Lk -o bit-v.1.2.8.tar.gz https://github.com/bittoshimoto/Bit/releases/download/v.1.2.8/bit-v.1.2.8.tar.gz && \
+    mkdir -p bit-v.1.2.8 && \
+    tar -xvf bit-v.1.2.8.tar.gz -C bit-v.1.2.8 && \
+    rm bit-v.1.2.8.tar.gz && \
+    install -m 0755 -o root -g root -t /usr/local/bin bit-v.1.2.8/* && \
+    rm -rf bit-v.1.2.8
 
 # Install Python modules
 RUN pip install uvloop
