@@ -8,11 +8,14 @@
 ```
 docker build -t electrumx-bit:electrumx-bit .
 ```
-
+### Windows:
 ```
 docker run -v C:\electrumx-bit:/data -p 50002:50002 electrumx-bit:electrumx-bit
 ```
-
+### Linux:
+```
+docker run -v /root/electrumx-bit:/data -p 50002:50002 --name electrumx-bit electrumx-bit:electrumx-bit
+```
 If there's an SSL certificate/key (`electrumx-bit.crt`/`electrumx-bit.key`) in the `/data` volume it'll be used. If not, one will be generated for you.
 
 You can view all ElectrumX environment variables here: https://github.com/spesmilo/electrumx/blob/master/docs/environment.rst
