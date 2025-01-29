@@ -46,8 +46,8 @@ ENV DAEMON_URL=http://bit:yhjiwsrtg@127.0.0.1:20971
 ENV EVENT_LOOP_POLICY uvloop
 ENV DB_DIRECTORY /data
 ENV SERVICES=tcp://:50001,ssl://:50002,wss://:50004,rpc://0.0.0.0:8000
-ENV SSL_CERTFILE=${DB_DIRECTORY}/electrumx-shibacoin.crt
-ENV SSL_KEYFILE=${DB_DIRECTORY}/electrumx-shibacoin.key
+ENV SSL_CERTFILE=${DB_DIRECTORY}/electrumx-bit.crt
+ENV SSL_KEYFILE=${DB_DIRECTORY}/electrumx-bit.key
 ENV HOST ""
 
 WORKDIR /data
